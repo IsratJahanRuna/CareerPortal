@@ -12,6 +12,9 @@
 	<section class="container-fluid bg">
 		<section class="row justify-content-center">
 			<section class="col-12 col-sm-6 col-md-3">
+
+<!--PHP Connection-->
+				
 	<?php
 	if(isset($_REQUEST['DONE_SIGNUP']))
   {
@@ -19,8 +22,11 @@
   echo  $_REQUEST["DONE_SIGNUP"];
   }
 	?>
-				<form class="form-container" action="savedatacore.php" method="POST">
-					<div class="regtitle"><u><b>Registration Form</b></u></div>
+
+<!--Form Design Started-->
+				
+  <form class="form-container" action="savedatacore.php" method="POST">
+  <div class="regtitle"><u><b>Registration Form</b></u></div>
   <div class="mb-3">
     <label for="exampleInputFName" class="form-label">First Name</label>
     <input type="text" class="form-control" name= "fname" required>
